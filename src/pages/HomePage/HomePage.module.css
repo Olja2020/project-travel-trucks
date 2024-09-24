@@ -1,7 +1,6 @@
 .homePage {
   background-color: var(--primary-white);
-  background-image: url('/project-successful-minds-07/imgHomePage/Background_element_mobile.png'),
-    url('/project-successful-minds-07/imgHomePage/Botle_mobile.png');
+  background-image: url('/project-travel-trucks/public/images/Picture.png');
   background-repeat: no-repeat;
   max-width: var(--container-min-width);
   height: 1374px;

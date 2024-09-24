@@ -1,5 +1,5 @@
 import TravelTrucks from '../../components/TravelTrucks/TravelTrucks.jsx';
-import styles from './TravelTrucks.module.css';
+import styles from './HomePage.module.css';
 const HomePage = () => {
   return (
     <div className={styles.homePage}>
