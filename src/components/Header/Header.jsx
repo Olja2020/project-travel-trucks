@@ -1,12 +1,9 @@
-import { useSelector } from 'react-redux';
-import { selectIsLoggedIn } from '../../redux/auth/selectors';
-import UserAuth from '../UserAuth/UserAuth.jsx';
-import UserLogo from '../UserLogo/UserLogo.jsx';
+import { NavLink } from 'react-router-dom';
 import Logo from '../Logo/Logo.jsx';
 import css from './Header.module.css';
 
 const Header = () => {
-  const isLoggedIn = useSelector(selectIsLoggedIn);
+  
 
   return (
     <div className={css.headerSection}>
@@ -14,7 +11,14 @@ const Header = () => {
         <div>
           <Logo />
         </div>
-        <div>{isLoggedIn ? <UserLogo /> : <UserAuth />}</div>
+        <div className={css.container_links}>
+            <NavLink className={css.link} to="/">
+              Home
+            </NavLink>
+            <NavLink className={css.link} to="/catalog">
+              Catalog
+            </NavLink>
+          </div>
       </header>
     </div>
   );
